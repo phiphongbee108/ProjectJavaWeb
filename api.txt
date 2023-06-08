@@ -1,0 +1,23 @@
+create account
+http://localhost:8081/api/v1/registration
+
+read all account
+http://localhost:8081/api/v1/accounts
+
+update account
+http://localhost:8081/api/v1/updateAccount/id
+
+delete account
+http://localhost:8081/api/v1/deleteAccount/id
+
+create product
+http://localhost:8081/api/v1/createProduct
+
+read all product
+http://localhost:8081/api/v1/products
+
+update product
+http://localhost:8081/api/v1/product/id
+
+delete product
+http://localhost:8081/api/v1/product/id
