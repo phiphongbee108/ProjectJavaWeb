@@ -1,0 +1,24 @@
+<h2 class="text-center">Danh sách user:</h2>
+<button class="btn btn-primary" (click)="addUser()">Thêm user</button>
+<table class="m-auto" border="1" style="border-collapse: collapse;">
+    <tr >
+        <th>id</th>
+        <th>username</th>
+        <th>pass</th>
+        <th>role_user</th>
+    </tr>
+    <tr *ngFor="let user of listusers">
+        <td>{{user.id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.pass}}</td>
+        <td>{{user.role_user}}</td>
+        <!-- <td>
+          <img alt="{{user.name}}" src="{{user.image}}" width="200" heiht="200" />
+        </td> -->
+
+        <td>
+          <button class="btn btn-danger me-1" (click)="deleteUser(user.id)">Xóa</button>
+          <button class="btn btn-warning" (click)="editUser(user.id)">Sửa</button>
+        </td>
+    </tr>
+</table>

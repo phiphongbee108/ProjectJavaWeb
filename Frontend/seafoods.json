@@ -1,0 +1,25 @@
+{
+  "seafoods": [
+    {
+      "id": 1,
+      "name": "Cua",
+      "price": 1000,
+      "image": "https://th.bing.com/th/id/R.909d7dd787b39e6ba4b15bd58090389f?rik=bgYwh7t142d3CA&pid=ImgRaw&r=0",
+      "address": "Ha Noi"
+    },
+    {
+      "id": 2,
+      "name": "Cá",
+      "price": "2000",
+      "image": "https://th.bing.com/th/id/OIP.5dpEsaxjq-ghMBTObW4OmgHaE8?w=285&h=190&c=7&r=0&o=5&pid=1.7",
+      "address": "Ha Noi"
+    },
+    {
+      "id": "3",
+      "name": "Tôm",
+      "price": "3000",
+      "image": "https://dacsanmuicamau.com/static/team/upload/images/meo-hay/cach-lam-tom-kho/sna-pham-tom-kho-lam-tai-nha.jpg",
+      "address": "Ha Noi"
+    }
+  ]
+}

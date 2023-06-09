@@ -1,0 +1,23 @@
+<form class="text-center mt-2" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label>
+  id: <input type="text" formControlName="id" />
+  </label>
+  <br>
+  <br>
+  <label>
+    username: <input type="text" formControlName="username" />
+  </label>
+  <br>
+  <br>
+  <label>
+    password: <input type="text" formControlName="pass" />
+  </label>
+  <br>
+  <br>
+  <label>
+    role_user: <input type="text" formControlName="role_user" />
+  </label>
+  <br>
+  <br>
+  <button class="btn btn-primary m-2" type="submit" [disabled]="!userForm.valid">Đăng kí</button>
+</form>
