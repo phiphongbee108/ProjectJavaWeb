@@ -9,13 +9,13 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping("api/v1/")
+@RequestMapping("be/")
 public class ProductController {
 
     @Autowired
     private ProductService productService;
 
-    @PostMapping("/createProduct")
+    @PostMapping("/add-product")
     public Boolean createProduct(@ModelAttribute Product product) {
         productService.createOrUpdate(product);
         return true;
@@ -32,18 +32,18 @@ public class ProductController {
         return productService.getProduct(id);
     }
 
-    @GetMapping("/editProduct/{id}")
-    public Product editProduct(@PathVariable Long id) {
-        return productService.eidtProduct(id);
-    }
-
-    @DeleteMapping("/product/{id}")
+    @DeleteMapping("/delete-product/{id}")
     public Boolean deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
         return true;
     }
 
-    @PutMapping("/product/{id}")
+    @GetMapping("/edit-product/{id}")
+    public Product editProduct(@PathVariable Long id) {
+        return productService.eidtProduct(id);
+    }
+
+    @PutMapping("/update-product/{id}")
     public Boolean updateProduct(@PathVariable Long id, @ModelAttribute Product product) {
         //code
         return true;

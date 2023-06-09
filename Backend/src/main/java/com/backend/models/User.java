@@ -6,14 +6,14 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class Account {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String userName;
+    private String username;
 
-    private String password;
+    private String pass;
 
     private Long role_user;
 
@@ -25,20 +25,20 @@ public class Account {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getusername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setusername(String username) {
+        this.username = username;
     }
 
-    public String getPassword() {
-        return password;
+    public String getpass() {
+        return pass;
     }
 
-    public void setPassWord(String password) {
-        this.password = password;
+    public void setpass(String pass) {
+        this.pass = pass;
     }
 
     public Long getRole_user() {

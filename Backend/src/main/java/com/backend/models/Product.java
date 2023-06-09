@@ -31,8 +31,8 @@ public class Product {
         return productName;
     }
 
-    public void setName(String nameProduct) {
-        this.productName = nameProduct;
+    public void setName(String productName) {
+        this.productName = productName;
     }
 
     public Long getPrice() {
@@ -48,14 +48,14 @@ public class Product {
     }
 
     public void setImg(String img) {
-        this.image = img;
+        this.image = image;
     }
 
-    public Long getProductType() {
+    public Long getcategoryID() {
         return categoryID;
     }
 
-    public void setProductType(Long productType) {
-        this.categoryID = productType;
+    public void setcategoryID(Long categoryID) {
+        this.categoryID = categoryID;
     }
 }
