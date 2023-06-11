@@ -1,5 +1,6 @@
 package com.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -11,18 +12,13 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @OneToOne(fetch = FetchType.LAZY)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Cart cart;
-
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private User user;
-
     private LocalDateTime date;
-
-    private Long total_order;
-
-    private Integer paid;
 
     public Long getId() {
         return id;
@@ -54,13 +50,5 @@ public class Order {
 
     public void setDate(LocalDateTime date) {
         this.date = date;
-    }
-
-    public Long getTotalOrder() {
-        return total_order;
-    }
-
-    public void setTotalOrder(Long total_order) {
-        this.total_order = total_order;
     }
 }

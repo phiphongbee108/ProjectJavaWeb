@@ -10,13 +10,9 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String productName;
-
     private Long price;
-
     private String image;
-
     private Long categoryID;
 
     public Long getIdProduct() {
